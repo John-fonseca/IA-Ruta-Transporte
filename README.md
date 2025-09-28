@@ -21,5 +21,7 @@ Incluye:
 ### Pasos de instalación
 1. Clonar el repositorio:
    ```bash
-   git clone <URL_DEL_REPO>
+   git clone <[URL_DEL_REPO](https://github.com/John-fonseca/IA-Ruta-Transporte.git)>
    cd ruta-transporte
+   cd /src
+   Ejecutar -> python main.py --start A --goal C
