@@ -1,0 +1,24 @@
+% estaciones
+station("Estacion Central").
+station("Estacion Sur").
+station("Estacion Este").
+station("Estacion Oeste").
+station("Estacion Norte").
+
+% conexiones (en minutos)
+connect("Estacion Central","Estacion Norte", 10, "linea1").
+connect("Estacion Central","Estacion Sur", 12, "linea1").
+connect("Estacion Central","Estacion Este", 8, "linea2").
+connect("Estacion Central","Estacion Oeste", 7, "linea2").
+connect("Estacion Norte","Estacion Este", 15, "linea3").
+connect("Estacion Sur","Estacion Oeste", 20, "linea3").
+
+% coordenadas opcionales
+coord("Estacion Central", -74.070, 4.710).
+coord("Estacion Norte", -74.071, 4.730).
+coord("Estacion Sur", -74.072, 4.690).
+coord("Estacion Este", -74.050, 4.710).
+coord("Estacion Oeste", -74.090, 4.710).
+
+% penalización por transbordo
+transfer_penalty(3).
