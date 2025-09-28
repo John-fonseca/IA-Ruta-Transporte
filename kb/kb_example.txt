@@ -1,0 +1,20 @@
+% estaciones
+station("A").
+station("B").
+station("C").
+station("D").
+
+% conexiones (origen, destino, tiempo_en_minutos, linea)
+connect("A","B", 5, "line1").
+connect("B","C", 7, "line1").
+connect("A","D", 10, "line2").
+connect("D","C", 3, "line2").
+
+% coordenadas opcionales (lon, lat)
+coord("A", -74.070, 4.710).
+coord("B", -74.068, 4.712).
+coord("C", -74.060, 4.715).
+coord("D", -74.065, 4.714).
+
+% penalizacion por cambio de linea
+transfer_penalty(4).
