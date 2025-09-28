@@ -1,0 +1,28 @@
+% estaciones
+station("Portal Norte").
+station("Calle 100").
+station("Calle 72").
+station("Calle 45").
+station("Calle 26").
+station("Universidades").
+
+% conexiones (origen, destino, tiempo_en_minutos, linea)
+connect("Portal Norte","Calle 100", 12, "linea_roja").
+connect("Calle 100","Calle 72", 8, "linea_roja").
+connect("Calle 72","Calle 45", 6, "linea_roja").
+connect("Calle 45","Calle 26", 5, "linea_roja").
+connect("Calle 26","Universidades", 4, "linea_roja").
+
+% otra línea con transbordo
+connect("Calle 100","Calle 26", 15, "linea_azul").
+
+% coordenadas opcionales
+coord("Portal Norte", -74.050, 4.770).
+coord("Calle 100", -74.060, 4.730).
+coord("Calle 72", -74.065, 4.720).
+coord("Calle 45", -74.068, 4.710).
+coord("Calle 26", -74.070, 4.700).
+coord("Universidades", -74.072, 4.690).
+
+% penalización
+transfer_penalty(5).
