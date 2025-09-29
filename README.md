@@ -24,4 +24,9 @@ Incluye:
    git clone <[URL_DEL_REPO](https://github.com/John-fonseca/IA-Ruta-Transporte.git)>
    cd ruta-transporte
    cd /src
-   Ejecutar -> python main.py --start A --goal C
+   Ejecutar -> python main.py --start A --goal C (example)
+   Ejecutar -> python main.py --kb ../kb/estaciones.txt --start "Portal Norte" --goal "Universidades"
+   Ejecutar -> python main.py --kb ../kb/kb_example3.txt --start "Estacion Sur" --goal "Estacion Norte"
+
+
+   
